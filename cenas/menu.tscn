@@ -51,32 +51,47 @@ scale = Vector2( 2.625, 2.5 )
 texture = ExtResource( 7 )
 
 [node name="lino" type="Sprite" parent="."]
-position = Vector2( 552, 136 )
+position = Vector2( 585, 133 )
 scale = Vector2( 2.25, 2.25 )
 texture = ExtResource( 5 )
 
 [node name="little" type="Label" parent="."]
 light_mask = 531
-margin_left = 512.0
-margin_top = 168.0
-margin_right = 852.0
-margin_bottom = 280.0
+margin_left = 562.0
+margin_top = 159.0
+margin_right = 902.0
+margin_bottom = 271.0
 custom_colors/font_color = Color( 0.909804, 0.811765, 0.65098, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Bunny"
+text = "Lino"
+
+[node name="bunny2" type="Label" parent="little"]
+light_mask = 531
+margin_left = -62.0
+margin_top = 4.0
+margin_right = 274.0
+margin_bottom = 116.0
+rect_pivot_offset = Vector2( 121, 55 )
+custom_colors/font_color = Color( 0.909804, 0.811765, 0.65098, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "&"
 
 [node name="bunny" type="Label" parent="little"]
 light_mask = 531
-margin_left = -328.0
-margin_right = 8.0
-margin_bottom = 112.0
+margin_left = -378.0
+margin_top = -4.0
+margin_right = -42.0
+margin_bottom = 108.0
+rect_pivot_offset = Vector2( 121, 55 )
 custom_colors/font_color = Color( 0.909804, 0.811765, 0.65098, 1 )
 custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
 custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 1 )
-text = "Little"
+text = "Emma"
 
 [node name="play" type="Label" parent="."]
 margin_left = 473.0
