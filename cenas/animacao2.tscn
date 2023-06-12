@@ -1,0 +1,394 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://assets/cenário/tileset.png" type="Texture" id=1]
+[ext_resource path="res://assets/personagem/emma/attack and die.png" type="Texture" id=2]
+[ext_resource path="res://assets/cenário/moveis.png" type="Texture" id=3]
+[ext_resource path="res://assets/personagem/rosto_personagem.png" type="Texture" id=4]
+[ext_resource path="res://assets/ui_icons/Premade dialog box  big.png" type="Texture" id=5]
+[ext_resource path="res://cenas/animacao2.gd" type="Script" id=6]
+[ext_resource path="res://font/NicoBold-Regular.otf" type="DynamicFontData" id=7]
+[ext_resource path="res://font/m6x11.ttf" type="DynamicFontData" id=8]
+[ext_resource path="res://assets/personagem/lilo/Pink_Monster.png" type="Texture" id=9]
+[ext_resource path="res://assets/personagem/emma/personagem_andando.png" type="Texture" id=10]
+
+[sub_resource type="AtlasTexture" id=1]
+atlas = ExtResource( 2 )
+region = Rect2( 48, 72, 24, 24 )
+
+[sub_resource type="AtlasTexture" id=2]
+atlas = ExtResource( 2 )
+region = Rect2( 24, 72, 24, 24 )
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 48, 24, 24 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 72, 24, 24 )
+
+[sub_resource type="SpriteFrames" id=5]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="DynamicFont" id=10]
+size = 25
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=11]
+size = 34
+outline_color = Color( 0.419608, 0.294118, 0.356863, 1 )
+font_data = ExtResource( 8 )
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 6 )
+
+[node name="fundo" type="Sprite" parent="."]
+position = Vector2( 528, 288 )
+scale = Vector2( 68.8696, 39.6364 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 332.228, 284.738, 23.9379, 22.644 )
+
+[node name="madeira" type="Sprite" parent="fundo"]
+position = Vector2( 0.232323, -3.22935 )
+scale = Vector2( 0.0552575, 0.0994619 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira15" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -16.8175, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira2" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -16.8175, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira3" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -16.8175, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira4" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 0, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira5" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 0, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira6" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -33.635, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira7" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 16.8175, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira8" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 16.8175, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira9" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 16.8176, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira10" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 0, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira11" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -33.635, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira12" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -16.8175, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira13" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -33.635, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira14" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 0, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira16" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -33.635, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira17" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -50.4525, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira18" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -50.4525, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira19" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -50.4525, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira20" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -50.4525, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira21" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -50.4525, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira22" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 16.8176, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira23" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -16.8175, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira24" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 50.4525, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira25" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 50.4525, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira26" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 50.4525, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira27" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 50.4525, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira28" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 50.4525, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira29" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 33.635, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira30" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 33.635, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira31" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 33.635, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira32" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 33.635, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira33" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 33.635, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira34" type="Sprite" parent="fundo/madeira"]
+position = Vector2( 16.8175, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira35" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -33.635, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira36" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -67.2701, 64.9366 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira37" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -67.2701, 48.7024 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira38" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -67.2701, 32.4683 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira39" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -67.2701, 16.2341 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="madeira40" type="Sprite" parent="fundo/madeira"]
+position = Vector2( -67.2701, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 74.2374, 74.7078, 27.5959, 26.3416 )
+
+[node name="Moveis" type="Sprite" parent="fundo"]
+position = Vector2( -2.67172, -2.62385 )
+scale = Vector2( 0.0989721, 0.151376 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0.00753784, 0, 15.8843, 32.7143 )
+
+[node name="Moveis2" type="Sprite" parent="fundo/Moveis"]
+position = Vector2( 42.8943, -13.6667 )
+scale = Vector2( 0.640284, 0.979167 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( -0.11097, 32.1772, 32.1306, 32.5262 )
+
+[node name="Moveis3" type="Sprite" parent="fundo/Moveis"]
+position = Vector2( 18.7789, -6.66666 )
+scale = Vector2( 0.652859, 0.886111 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 45.4243, 32.0273, 20.8348, 15.8884 )
+
+[node name="Moveis4" type="Sprite" parent="fundo/Moveis"]
+position = Vector2( 29.342, 21.3333 )
+scale = Vector2( 1.35707, 0.616667 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 64.2915, 113.217, 32.1079, 30.8488 )
+
+[node name="Moveis" type="Sprite" parent="fundo/Moveis"]
+position = Vector2( 56.3366, 29.3333 )
+scale = Vector2( 0.678533, 0.718589 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( -1.54934, 68.6124, 17.404, 13.1019 )
+
+[node name="Moveis6" type="Sprite" parent="fundo/Moveis"]
+position = Vector2( -8.21575, 33.3333 )
+scale = Vector2( 0.625674, 0.628788 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 47.5967, 153.203, 17.6566, 22.3031 )
+
+[node name="Moveis5" type="Sprite" parent="fundo/Moveis"]
+position = Vector2( 56.3366, 9.33334 )
+scale = Vector2( 0.665434, 0.681667 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 33.4541, 87.1896, 14.2751, 25.8126 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 344, 168 )
+scale = Vector2( 5.08333, 5.08333 )
+frames = SubResource( 5 )
+frame = 1
+speed_scale = 0.3
+playing = true
+
+[node name="caixaDialogo" type="Sprite" parent="."]
+position = Vector2( 528, 456 )
+scale = Vector2( 3.17105, 3.125 )
+texture = ExtResource( 5 )
+
+[node name="RostoPersonagem" type="Sprite" parent="caixaDialogo"]
+position = Vector2( -122.556, -0.959991 )
+scale = Vector2( 0.585062, 0.53 )
+texture = ExtResource( 4 )
+
+[node name="Texto" type="RichTextLabel" parent="."]
+margin_left = 265.0
+margin_top = 431.0
+margin_right = 952.0
+margin_bottom = 504.0
+custom_colors/default_color = Color( 0.458824, 0.345098, 0.4, 1 )
+custom_fonts/normal_font = SubResource( 10 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 256.0
+margin_top = 384.0
+margin_right = 324.0
+margin_bottom = 415.0
+custom_colors/font_color = Color( 0.458824, 0.345098, 0.4, 1 )
+custom_fonts/font = SubResource( 11 )
+text = "Emma"
+
+[node name="lino" type="Sprite" parent="."]
+position = Vector2( 472, 104 )
+scale = Vector2( 2, 1.75 )
+texture = ExtResource( 9 )
+
+[node name="emma" type="Sprite" parent="."]
+position = Vector2( 439.375, 169.625 )
+scale = Vector2( 5.82895, 5.46875 )
+texture = ExtResource( 10 )
+region_enabled = true
+region_rect = Rect2( 3.05627, 49.2351, 19.7007, 24.9542 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
