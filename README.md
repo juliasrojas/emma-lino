@@ -1,2 +1,2 @@
-# LittleBunny
-Jogo de plataforma feito em 5 dias
+# Emma & Lino
+jogo de plataforma feito para trabalho 
